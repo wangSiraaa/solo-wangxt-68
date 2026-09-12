@@ -1,0 +1,130 @@
+:root {
+  --bg: #14161c;
+  --bg-2: #1b1e26;
+  --bg-3: #232734;
+  --border: #333847;
+  --text: #e6e9f0;
+  --text-dim: #9aa3b5;
+  --accent: #6aa6ff;
+  --accent-2: #7be0a1;
+  --danger: #ff6b6b;
+  --warn: #ffc85c;
+  font-family: 'Inter', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+}
+
+#app {
+  height: 100vh;
+}
+
+button {
+  background: var(--bg-3);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 11px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+button:hover {
+  border-color: var(--accent);
+}
+button.primary {
+  background: #2c5ea8;
+  border-color: #3d74c2;
+}
+button.primary:hover {
+  background: #3570c4;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+input[type='number'],
+input[type='text'],
+select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 4px 7px;
+  font-size: 12px;
+  width: 72px;
+}
+input[type='text'] {
+  width: 100%;
+}
+input[type='range'] {
+  accent-color: var(--accent);
+}
+input[type='checkbox'] {
+  accent-color: var(--accent);
+}
+
+.section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.panel {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.tag {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+.tag.green {
+  color: var(--accent-2);
+  border-color: #355e45;
+}
+.tag.red {
+  color: var(--danger);
+  border-color: #6e3a3a;
+}
+.tag.blue {
+  color: var(--accent);
+  border-color: #35507a;
+}

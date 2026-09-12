@@ -1,0 +1,33 @@
+{
+  "name": "sprite-atlas-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "纯本地浏览器精灵图集打包工具：序列帧管理 / maxrects 装箱 / PixiJS 预览 / IndexedDB 存档",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "vite preview --port 4173 & sleep 2 && node e2e/smoke.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^25.0.1",
+    "svelte": "^4.2.19",
+    "svelte-check": "^4.0.5",
+    "tslib": "^2.7.0",
+    "typescript": "~5.5.4",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.9"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "maxrects-packer": "^2.1.1",
+    "pixi.js": "^8.5.2"
+  }
+}
